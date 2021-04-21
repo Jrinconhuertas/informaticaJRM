@@ -1,0 +1,284 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em ;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.6em;
+    text-align: center;
+}
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    
+}
+
+.header {
+    background: #333;
+    color: white;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+    .header a {
+        color: white;
+        text-decoration: none;
+    }
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 175px;
+    height: 70px;
+    border-radius: 65%;
+}
+
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.2em;
+  }
+
+.menu-icon {
+    display: none;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;  
+     
+}
+
+    .navigation ul li {
+        display: inline-block;
+        
+    }
+
+        .navigation ul li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear; 
+            border-radius: 5px;
+        }
+
+            .navigation ul li a:hover {
+                background: #4a4a4a;
+            }
+
+.main {
+    padding-top: 9rem;
+}
+
+/*FOOTER*/
+
+.footer-content {
+    background: #d3d1d1;
+    padding: 1rem 0;
+    margin: 1px;
+    text-align: center;
+    margin-top: 3rem;
+    line-height: 1.6em ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.social {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    margin: rem 0 1rem 0;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.socials{
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    text-align: center;
+    }
+
+.social li {
+    margin: 0 5px;
+}
+
+.social a {
+    text-decoration: none;
+    justify-items: center;
+    color: black;
+    font-size: 1.2em ;
+    transition: all 0.4s linear;
+    
+}
+
+.social a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+    
+}
+
+.social a:hover i {
+    color :whitesmoke;
+    
+}
+
+.footer-btn {
+    background: rgb(49, 48, 48);
+    width: 100vw;
+    padding: 20px 0 0 0;
+    text-align: center;
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.footer-btn a{
+    text-decoration: none;
+    color:whitesmoke;
+    transition: all 0.4s linear;
+}
+
+.footer-btn a:hover {
+    color: turquoise;
+    text-transform: uppercase;
+}
+
+  /*BOTON DE WHATSAPP FLOTANTE*/
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* RESPONDISVE SITIOS MOVILES*/
+
+@media  Only screen and (max-width: 836px){
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+        .navigation ul {
+            display: none;
+        }
+            .navigation ul.show{
+                display: block;
+            }
+                .navigation ul li {
+                    display: block;
+                }
+
+                    .navigation ul li a {
+                        display: block;
+                        padding: 0.5rem 0;
+                        transition: all 0.4s linear; 
+                        border-radius: 5px;
+                    }
+
+                        .navigation ul li a:hover {
+                            background: #4a4a4a;
+                        }
+    .social a {
+        font-size: 1em;
+        margin: 0;
+    }
+                    }
+
+.container-slider {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #fff, 
+                0 10px 50px;
+    position: relative;
+    z-index: 0;
+}
+
+.slider {
+    height: 400px;
+    width: 400%;
+    display: flex;
+    margin-left: -100%;
+}
+
+.slider__section {
+    width: 100%;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.slider__btn:hover {
+    background: #fff;
+}
+.slider__btn--right {
+    right: 10px;
+}
+
+.slider__btn--left {
+    left: 10px;
+}
